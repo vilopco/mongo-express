@@ -15,9 +15,7 @@ mongoose.connection.on('error', (e)=>{console.error(e)});
 
 
 app.get('/', (req, res) => {
-    
-    visitante.create({date:Date.now(),name: req.query.name},function(err){
-        if(err) return console.log(err);
+    visitante.create({date:Date.now(),name: req.query.name},function(){
         res.send('<h1>El visitante fue almacenado con éxito</h1>');
     })
 });
