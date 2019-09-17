@@ -44,7 +44,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/register', (req, res) => {
-    res.send('<form action="//localhost:3000/" method="post"><input type="text" name="name" placeholder="nombre"><input type="email" name="email" placeholder="Email"><input type="password" name="password" placeholder="Password"><input type="submit" value="Enviar"/></form>');
+    res.send('<form action="//localhost:3000/" method="post"><input type="text" id="name" name="name" placeholder="nombre"><input type="email" id="email" name="email" placeholder="Email"><input type="password" name="password" placeholder="Password"><input type="submit" value="Enviar"/></form>');
     
     
     /*
