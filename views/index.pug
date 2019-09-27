@@ -5,10 +5,10 @@ html
     table
       thead
         tr
-          th Id
           th Name
+          th Email
       tbody
         each user in users
           tr
-            td= user._id
             td= user.name
+            td= user.email
